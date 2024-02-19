@@ -1,11 +1,21 @@
+* {
+    margin: 0;
+    padding:0;
+
+}
+
+
 #root {
     width:100%;
     height:100%;
 }
 .mainpage__content {
     width:100%;
-    height:100%;
+    height:100vh;
     position : relative;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
 
     img {
         position : absolute;
@@ -15,6 +25,14 @@
 
     .header__container, .footer__container {
         position : relative;
+        align-self: center;
+        top:50%;
+
+        .header__content {
+            display:flex;
+            justify-content: center;
+            
+        }
     }
 }
 
