@@ -1,13 +1,23 @@
+import './header.scss'
+import { GiBeech } from "react-icons/gi";
+
 function Header() {
 
     return (
-        <div className = "header__container">
-            <div className = "header__content">
-                <p>Berton Aurélie <br/> Portfolio</p>
-                <p>Projects</p>
+        <header>
+            <div className = "header__container">
+                <div id="logo">
+                    <GiBeech />
+                </div>
+                <nav>
+                    <ul>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-
-        </div>
+        </header>
     )
 }
 

@@ -1,53 +1,112 @@
+$mainColor : #FBECD6;
 * {
     margin: 0;
     padding:0;
 
 }
-
-
 #root {
-    width:100%;
-    height:100%;
+width:100%;
+height:100vh;
 }
-.mainpage__content {
+
+main {
+    z-index:1;
     width:100%;
     height:100vh;
-    position : relative;
-    overflow-y: auto;
-    overscroll-behavior-y: contain;
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
+}
+section {
+    width:100%;
+    height:100vh;
+    display:flex;
+    background-color: $mainColor;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    flex-direction: column;
+}
 
-    img {
-        position : absolute;
-        height:100%;
+.page1 {
+    display:flex;
+    width:100%;
+    height:100vh;
+
+    .page1__container {
+        display:flex;
         width:100%;
-    }
+        flex-direction: column;
+        justify-content: center;
+        flex-grow:1;
 
-    .header__container, .footer__container {
-        position : relative;
-        align-self: center;
-        top:50%;
+        .entete {
+            display:grid;
+            width:300px;
+            height:120px;
+            grid-template-columns: 100px 200px;
+            grid-template-rows: 80px 40px ;
+            z-index:3;
+            .box1{
+                border-style: none double solid none;
+                border-color:#6b9593;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+            }
+            
+            .box2{
+                border-color:#6b9593;
+                border-style: solid;
+                border-width: 0 0 2px 0;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding:5px 0 0 10px;
+            
+                h1 {
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            
+                span {
+                    
+                    font-weight: 400;
+                    
+                }
+            }
+            
+            .box3{
+                border-color:#6b9593;
+                border-style: solid;
+                border-width: 0 2px 0 0;
+            }
+            
+            .box4{
+            
+                p {
+                    padding:5px 0 0 10px;
+                    font-style: italic;
+                    
+                }
+            }
+        }
+        
+        
 
-        .header__content {
+        .curvedText {
+            height:100%;
             display:flex;
             justify-content: center;
-            
+            align-items: center;
+            align-self: center;
         }
-    }
+
+        .arrow {
+            width:100%;
+            display: flex;
+            align-self: flex-end;
+            justify-content: center;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        }
 }
 
 
-
-@keyframes animate {
-    0% {
-        filter: blur(0px);
-    }
-
-    50% {
-        filter: blur(0px);
-    }
-
-    100% {
-        filter: blur(40px);
-    }
-}
