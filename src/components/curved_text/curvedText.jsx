@@ -10,7 +10,7 @@ function CurvedText () {
                     Je suis Aurélie Berton
                 </span>
                     
-                <span aria-role="presentation">
+                <span className="presentation">
                     <span className="warp__0">
                         J
                     </span>
@@ -85,7 +85,7 @@ function CurvedText () {
                     Développeuse Web
                 </span>
     
-                <span aria-role="presentation">
+                <span className="presentation">
                     <span className="warp__0">
                         D
                     </span>

@@ -1,0 +1,52 @@
+.entete {
+    position:relative;
+    display:grid;
+    width:300px;
+    height:10vh;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 80px 40px ;
+    z-index:3;
+    .box1{
+        border-style: none double solid none;
+        border-color:#6b9593;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+    }
+    
+    .box2{
+        border-color:#6b9593;
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        padding:5px 0 0 10px;
+        align-self: end;
+    
+        h1 {
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Alex Brush", cursive;
+            font-size: 50px;
+            padding: 0 0 5px 10px;
+        }
+    
+        span {
+            
+            font-weight: 400;
+            
+        }
+    }
+    
+    .box3{
+        border-color:#6b9593;
+        border-style: solid;
+        border-width: 0 2px 0 0;
+    }
+    
+    .box4{
+    
+        p {
+            padding:5px 0 0 10px;
+            font-style: italic;
+            
+        }
+    }
+}

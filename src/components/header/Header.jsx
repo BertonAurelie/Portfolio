@@ -1,5 +1,5 @@
 import './header.scss'
-import { GiBeech } from "react-icons/gi";
+import { VscActivateBreakpoints } from "react-icons/vsc";
 
 function Header() {
 
@@ -7,7 +7,7 @@ function Header() {
         <header>
             <div className = "header__container">
                 <div id="logo">
-                    <GiBeech />
+                <VscActivateBreakpoints />
                 </div>
                 <nav>
                     <ul>
