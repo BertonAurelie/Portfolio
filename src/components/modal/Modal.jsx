@@ -2,10 +2,11 @@ import { useRef, useEffect } from 'react';
 
 
 
-function Modal({children, isOpen, handleClose}) {
-    // 👇 L'usage de cet ref va particulièrement nous intéresser 
+function Modal(props) {
+    const isOpen = props.isOpen
+    const handleClose = props.handleClose
+    const children = props.children
     const dialogRef = useRef(null);
-
     const close = () => {
         dialogRef.current?.close();
     };
@@ -13,20 +14,15 @@ function Modal({children, isOpen, handleClose}) {
     useEffect(() => {
         const dialog = dialogRef.current;
         if (isOpen && !dialogRef.current?.open) {
-            dialog?.showModal(); // 👈 usage propre à l'élément <dialog>
+            dialog?.showModal(); 
         } else {
-            dialog?.close(); // 👈 usage propre à l'élément <dialog>
+            dialog?.close(); 
         }
     }, [isOpen]);
 
     return (
-        <dialog
-            ref={dialogRef}
-            // 👇 capture l'élément 'close' et mise à jour de l'état du composant
-            onClose={handleClose}
-        >
+        <dialog ref={dialogRef} onClose={handleClose} >
             {children}
-
             <button 
                 type="button" 
                 onClick={close} 
