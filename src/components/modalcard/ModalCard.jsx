@@ -27,9 +27,25 @@ function ModalCard(props) {
                     isOpen={isOpen}
                     handleClose={handleClose}
                     children={
-                        <div className ="ss">                            
-                            <h1>{item.title}</h1>
-                            <small>{item.description}</small>
+                        <div className ="modale__content">    
+                            <div className ="modale__title">
+                                <h3 className="modale__h2">nom du projet :</h3>                                
+                                <h1>{item.title}</h1>
+                            </div>       
+                            <div className ="modale__description">
+                            <h3 className="modale__h2">Description du projets :</h3>    
+                            <p>{item.description}</p>
+                            </div>                                             
+                            <div className ="modale__tags">
+                            <h3 className="modale__h2">Outils utilisés :</h3>    
+                            <p>{item.tags}</p>
+                            </div> 
+                            <div className ="modale__site">
+                            <button><a href ={item.site}></a>Visiter le site</button>
+                            </div> 
+                            <div className ="modale__pictures">    
+                            {item.pictures}
+                            </div>                
                         </div>
                     }
                 />

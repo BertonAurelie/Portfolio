@@ -21,7 +21,7 @@ function Modal(props) {
     }, [isOpen]);
 
     return (
-        <dialog ref={dialogRef} onClose={handleClose} >
+        <dialog ref={dialogRef} onClose={handleClose} style={{display: isOpen ? 'block' : 'none' }}>
             {children}
             <button 
                 type="button" 

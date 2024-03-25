@@ -3,11 +3,12 @@ import Footer from '../../components/footer/Footer'
 import CurvedText from '../../components/curved_text/curvedText'
 import Card from '../../components/card/Card'
 import BoxIndexHeader from '../../components/boxIndexHeader/BoxIndexHeader'
+import Form from '../../components/form/Form2'
 import './style.scss'
 import { BsArrowDown } from "react-icons/bs";
 import justice from '../../assets/justice.webp'
 import cloud from '../../assets/cloud2.webp'
-
+import {data} from '../../data/data'
 
 
 function Home () {
@@ -62,7 +63,9 @@ function Home () {
                             section = "projets"
                         />
                         <div className ="page3__content">
-                            <Card/>
+                            <Card
+                            item = {data}
+                            />
                         </div>
                     </div>
                 </section>
@@ -71,6 +74,9 @@ function Home () {
                         <BoxIndexHeader
                             section = "contact"
                         />
+                        <div className ="page4__content">
+                            <Form/>
+                        </div>
                     </div>
                 </section>
             </main>
