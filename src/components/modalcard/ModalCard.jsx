@@ -27,30 +27,35 @@ function ModalCard(props) {
                     isOpen={isOpen}
                     handleClose={handleClose}
                     children={
-                        <div className ="modale__content">    
-                            <div className ="modale__title">
-                                <h3 className="modale__h2">nom du projet :</h3>                                
+                        <>    
+                            <div className ="modal__title">                        
                                 <h1>{item.title}</h1>
                             </div>       
-                            <div className ="modale__description">
-                            <h3 className="modale__h2">Description du projets :</h3>    
-                            <p>{item.description}</p>
+                            <div className ="modal__description">
+                                <h3 className="modal__h3">Description du projet :</h3>    
+                                <p>{item.description}</p>
                             </div>                                             
-                            <div className ="modale__tags">
-                            <h3 className="modale__h2">Outils utilisés :</h3>    
-                            <p>{item.tags}</p>
+                            <div className ="modal__tags">
+                                <h3 className="modal__h3">Outils utilisés :</h3>    
+                                <ul>
+                                    {item.tags.map((tag, index) => (
+                                        <li key={index}>{tag}</li>
+                                    ))}
+                                </ul>
                             </div> 
-                            <div className ="modale__site">
-                            <button><a href ={item.site}></a>Visiter le site</button>
+                            <div className ="modal__site">
+                                <a href ={item.site} target="_blank">Visiter le site</a>
                             </div> 
-                            <div className ="modale__pictures">    
-                            {item.pictures}
+                            <div className ="modal__pictures">    
+                                {item.pictures.map((image) => (
+                                    <img key={item.id} src = {image} className="modal__pictures--img"></img>
+                                ))}
                             </div>                
-                        </div>
+                        </>
                     }
                 />
                 
-                <button type="button" onClick={handleClick}>
+                <button type="button" onClick={handleClick} id="button" >
                     <FaPlus/>
                 </button>
             </article>

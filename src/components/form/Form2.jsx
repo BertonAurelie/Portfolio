@@ -6,11 +6,11 @@ function Form () {
         <form method ="get">
             <fieldset>
                 <legend>Vos coordonnées</legend> 
-                <label for="nom">Nom</label>
+                <label htmlFor="nom">Nom</label>
                 <input type="text" name="nom" id="nom"/>
-                <label for="prenom">Prénom</label>
+                <label htmlFor="prenom">Prénom</label>
                 <input type="text" name="prenom" id="prenom"/>
-                <label for="email">E-mail</label>
+                <label htmlFor="email">E-mail</label>
                 <input type="email" name="email" id="email"/>
             </fieldset>
             <fieldset>

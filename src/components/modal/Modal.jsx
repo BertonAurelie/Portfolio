@@ -22,15 +22,16 @@ function Modal(props) {
 
     return (
         <dialog ref={dialogRef} onClose={handleClose} style={{display: isOpen ? 'block' : 'none' }}>
-            {children}
-            <button 
-                type="button" 
-                onClick={close} 
-                title="close modal" 
-                aria-label="close modal"
-                >
-                close
-            </button>
+            <div className ="modal__content">  
+                {children}
+                <button 
+                    type="button" 
+                    onClick={close} 
+                    className="modal__button"
+                    >
+                    close
+                </button>
+            </div>
         </dialog>
     );
 }

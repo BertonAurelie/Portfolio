@@ -49,7 +49,6 @@ function Home () {
                                         <li>React</li>
                                         <li>Node.js</li>
                                         <li>MongoDB</li>
-                                        <li>Express.js</li>
                                         <li>VBA</li>
                                     </ul>
                                 </div>

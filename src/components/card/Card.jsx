@@ -5,7 +5,7 @@ function Card() {
     return (
         <>
             {
-                data.map((item) => <ModalCard item={item}/>)
+                data.map((item) => <ModalCard item={item} key={item.id}/>)
             }                
         </>
     )
