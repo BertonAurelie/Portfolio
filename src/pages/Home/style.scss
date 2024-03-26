@@ -27,9 +27,10 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     flex-direction: column;
+
 }
 
-.page1 {
+#accueil {
     display:flex;
     width:100%;
     height:100%;
@@ -69,7 +70,7 @@ section {
 /********************************************************/
 /********************************************************/
 
-.page2 { 
+#presentation { 
     display:flex;
     width:100%;
     height:100vh;
@@ -163,7 +164,7 @@ section {
 /********************************************************/
 
 
-.page3 {
+#projets {
     background: linear-gradient(0deg, rgba(251,236,214,1) 0%, rgba(255,255,255,1) 50%, rgba(251,236,214,1) 100%);
     display:flex;
     width:100%;
@@ -394,3 +395,102 @@ section {
 /**********************SECTION 4 ************************/
 /********************************************************/
 /********************************************************/
+
+
+#contact { 
+    display:flex;
+    width:100%;
+    height:100vh;
+    flex-direction: row;
+    
+    .page4__container {
+        display:flex;
+        width:100%;
+        height:100vh;
+        flex-direction: column;
+        gap:30px;
+        .page4__content {
+            width:50%;
+            height:70%;
+            display:flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            margin-top: 30px;
+
+            form {
+                width:100%;
+                height:100%;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                align-self: center;
+                align-items: center;
+                font-family: $fontFamilyBasic;
+                
+                h3 {
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+                fieldset {
+                    display:flex;
+                    flex-direction: column;
+                    width:98%;
+                    height:100%;
+                    background: linear-gradient(0deg, rgba(251,236,214,1) 0%, rgba(255,255,255,1) 50%, rgba(251,236,214,1) 100%);
+    
+
+                    legend {
+                        font-size: 35px;
+                        font-family: $fontFamilyOriginal;
+                    }
+
+                    label {
+                        display:flex;
+                        text-align: flex-end;
+                        align-items: center;
+                        flex-basis: 100px;
+                        justify-content: center;
+
+                    }
+
+                    input {
+                        width:270px;
+                        height:30px;
+                        margin:5px;
+                    }
+                }
+
+                #message {
+                    width:calc((200% - 80px)/2);
+                    height:100%;
+                    margin:15px;
+
+                }
+                
+                .form_contact {
+                    display:flex;
+                    justify-content: center;
+                    margin:15px;
+                    width:80%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    height:150px;
+                }
+
+                .button__style1 {
+                    display:flex;
+                    align-self:center;
+                    justify-content: center;
+                    border-radius: 25px ;
+                    background: radial-gradient(circle, #FBECD6 0%, #FBECD6 60%);
+                    padding:8px 15px;
+                    border: 2px solid #e6d8c4;
+                    box-shadow: 5px 5px 15px 5px #E6D8C4;
+                    width:80px;
+                    height:40px;
+                }
+            }
+        }
+    }
+}

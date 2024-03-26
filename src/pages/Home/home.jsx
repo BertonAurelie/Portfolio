@@ -16,7 +16,7 @@ function Home () {
         <>
             <Header />
             <main>
-                <section className = "page1">
+                <section id = "accueil">
                     <div className = "page1__container">
                             <BoxIndexHeader/>
                         <div className = "curvedText">
@@ -27,7 +27,7 @@ function Home () {
                         </div>
                     </div>
                 </section>
-                <section className = "page2">
+                <section id = "presentation">
                     <div className = "page2__container">
                         <BoxIndexHeader
                             section = "présentation"
@@ -56,7 +56,7 @@ function Home () {
                         </div>
                     </div>
                 </section>
-                <section className = "page3">
+                <section id = "projets">
                     <div className = "page3__container">
                         <BoxIndexHeader
                             section = "projets"
@@ -68,7 +68,7 @@ function Home () {
                         </div>
                     </div>
                 </section>
-                <section className = "page4">
+                <section id = "contact">
                     <div className = "page4__container">
                         <BoxIndexHeader
                             section = "contact"

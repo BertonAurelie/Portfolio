@@ -47,8 +47,8 @@ function ModalCard(props) {
                                 <a href ={item.site} target="_blank">Visiter le site</a>
                             </div> 
                             <div className ="modal__pictures">    
-                                {item.pictures.map((image) => (
-                                    <img key={item.id} src = {image} className="modal__pictures--img"></img>
+                                {item.pictures.map((image, index) => (
+                                    <img key={index} src = {image} className="modal__pictures--img"></img>
                                 ))}
                             </div>                
                         </>

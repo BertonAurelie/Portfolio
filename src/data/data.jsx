@@ -13,6 +13,7 @@ import imgGrimoire2 from '../assets/mon_vieux_grimoire_2.webp'
 import imgGrimoire3 from '../assets/mon_vieux_grimoire_3.webp'
 import imgGrimoire4 from '../assets/mon_vieux_grimoire_4.webp'
 import imgGrimoire5 from '../assets/mon_vieux_grimoire_5.webp'
+import imgId4 from '../assets/chihiro.webp'
 
 
 export const data = [
@@ -72,5 +73,18 @@ export const data = [
             "Node.js"
         ],
         "site" : "https://github.com/BertonAurelie/OC-P7-mon_vieux_grimoire---backend"
+    },
+    {
+        "id" : "4",
+        "title" : "Association Chihiro",
+        "cover": imgId4,
+        "pictures":[
+        ],
+        "description":"En cours de développement.",
+        "tags": [
+            "React",
+            "sass",
+        ],
+        "site" : ""
     }
 ]
