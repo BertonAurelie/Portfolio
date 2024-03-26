@@ -1,4 +1,4 @@
-$colorBox : #5f72ae;
+$colorBox : #C0C4B6;
 $ancienneCouleur : #6b9593;
 
 .entete {
@@ -113,4 +113,18 @@ $ancienneCouleur : #6b9593;
         }
 
     }
+}
+
+@keyframes slide {
+
+    from {
+        transform:translateY(100%);
+        opacity:0;
+    }
+
+    to {
+        transform:translateY(0);
+        opacity:1
+    }
+
 }

@@ -9,28 +9,57 @@ import { BsArrowDown } from "react-icons/bs";
 import justice from '../../assets/justice.webp'
 import cloud from '../../assets/cloud2.webp'
 import {data} from '../../data/data'
-
-
+import { motion, useScroll,scrollRef,useSpring,useMotionValueEvent } from "framer-motion"
+import { useRef } from "react";
 function Home () {
+
+    const scrollRef = useRef(null)
+    const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 40,
+    restDelta: 0.001
+  });
+
+  const test = useSpring(scrollYProgress, {
+  })
+
+  const { scrollY } = useScroll()
+
+useMotionValueEvent(scrollY, "change", (latest) => {
+  console.log("Page scroll: ", latest)
+})
+
     return (  
         <>
             <Header />
             <main>
                 <section id = "accueil">
-                    <div className = "accueil__container">
+                    <div 
+                        className = "accueil__container"
+                        
+                    >
                             <BoxIndexHeader/>
                         <div className = "accueil__content">
-                            <div className = "curvedText">
+                            <motion.div 
+                                className = "curvedText"
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                            
+                            >
                                 <CurvedText/>
-                            </div>
+                            </motion.div>
                             <div className = "arrow">
                                 <BsArrowDown />
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id = "presentation">
-                    <div className = "presentation__container">
+                <section id = "presentation"  >
+                    <motion.div  
+                        className = "presentation__container"
+                        style={{ scaleX: scrollYProgress }}
+                    >
                         <BoxIndexHeader
                             section = "présentation"
                         />
@@ -56,7 +85,7 @@ function Home () {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </section>
                 <section id = "projets">
                     <div className = "projets__container">
