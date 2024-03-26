@@ -19,7 +19,8 @@ function BoxIndexHeader (props) {
                             </div>
                             </div>    
                             <div className="box4">
-                                <p>{props.section}</p>
+                                <p id="box4__p--desktop">{props.section}</p>
+                                <h1 id="box4__p--mobile">Portfolio</h1>
                             </div>
                         </div>
     )

@@ -4,16 +4,32 @@ $ancienneCouleur : #6b9593;
 .entete {
     position:relative;
     display:grid;
-    width:300px;
-    height:10vh;
+    width:50%;
+    height:150px;
     grid-template-columns: 80px 250px;
     grid-template-rows: 80px 40px ;
     z-index:3;
+
+    @media (max-width: 768px) {
+        width:50%;
+        height:150px;
+        grid-template-columns: 60px 180px;
+        grid-template-rows: 60px 40px ;
+    }
+
+    @media (max-width: 425px) {
+        grid-template-columns: 40px 90%;
+    }
+
     .box1{
         border-style: none double solid none;
         border-color:$colorBox;
         border-style: solid;
         border-width: 0 2px 2px 0;
+
+        @media (max-width: 425px) {
+            border-width: 0 0 2px 0;
+        }
     }
     
     .box2{
@@ -29,6 +45,14 @@ $ancienneCouleur : #6b9593;
             font-family: "Alex Brush", cursive;
             font-size: 50px;
             padding: 0 0 5px 10px;
+
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 562px) {
+                display:none;
+            }
         }
     
         span {
@@ -36,6 +60,7 @@ $ancienneCouleur : #6b9593;
             font-weight: 400;
             
         }
+
     }
     
     .box3{
@@ -43,15 +68,36 @@ $ancienneCouleur : #6b9593;
         border-style: solid;
         border-width: 0 2px 0 0;
 
+        @media (max-width: 425px) {
+            border-width: 0 ;
+        }
        
     }
     
     .box4{
     
-        p {
+        #box4__p--desktop {
             padding:5px 0 0 10px;
             font-style: italic;
+
+            @media (max-width: 562px) {
+                display:none;
+            }
             
+        }
+
+        #box4__p--mobile {
+            display:none;
+
+            @media (max-width: 562px) {
+                
+                display:block;
+                font-weight: 400;
+                font-style: normal;
+                font-family: "Alex Brush", cursive;
+                font-size: 35px;
+                padding: 0;
+            }
         }
     }
 
@@ -61,6 +107,10 @@ $ancienneCouleur : #6b9593;
         width:90%;
         height:100%;
         border-width: 0 2px 0 0;
+
+        @media (max-width: 425px) {
+            border-width: 0 ;
+        }
 
     }
 }

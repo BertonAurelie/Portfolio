@@ -1,5 +1,6 @@
 import './header.scss'
 import { VscActivateBreakpoints } from "react-icons/vsc";
+import { FaHouseUser } from "react-icons/fa";
 
 function Header() {
     
@@ -7,14 +8,14 @@ function Header() {
         <header>
             <div className = "header__container">
                 <div id="logo">
-                <VscActivateBreakpoints />
+                    <VscActivateBreakpoints />
                 </div>
                 <nav>
                     <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>

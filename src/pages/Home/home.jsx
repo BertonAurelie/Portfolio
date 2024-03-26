@@ -17,27 +17,29 @@ function Home () {
             <Header />
             <main>
                 <section id = "accueil">
-                    <div className = "page1__container">
+                    <div className = "accueil__container">
                             <BoxIndexHeader/>
-                        <div className = "curvedText">
-                            <CurvedText/>
-                        </div>
-                        <div className = "arrow">
-                            <BsArrowDown />
+                        <div className = "accueil__content">
+                            <div className = "curvedText">
+                                <CurvedText/>
+                            </div>
+                            <div className = "arrow">
+                                <BsArrowDown />
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section id = "presentation">
-                    <div className = "page2__container">
+                    <div className = "presentation__container">
                         <BoxIndexHeader
                             section = "présentation"
                         />
-                        <div className = "page2__content">
-                            <div className = "page2__img">
+                        <div className = "presentation__content">
+                            <div className = "presentation__img">
                                 <img src = {cloud} id="img1"></img>
                                 <img src = {justice} id="img2"></img>
                             </div>
-                            <div className ="page2__text">
+                            <div className ="presentation__text">
                                 <div className = "ma__presentation">
                                 <p>Issue d'une double licence droit-philosophie, j'ai travaillé durant 7 ans pour un cabinet d'avocat à la cour de Cassation et au conseil d'Etat.Lassée de ces procédures judiciaires immuables, j'ai suivi la formation développeur web d'OpenClassrooms pour une vie professionnelle plus riche intellectuellement et passionnante.</p>
                                 </div>
@@ -57,11 +59,11 @@ function Home () {
                     </div>
                 </section>
                 <section id = "projets">
-                    <div className = "page3__container">
+                    <div className = "projets__container">
                         <BoxIndexHeader
                             section = "projets"
                         />
-                        <div className ="page3__content">
+                        <div className ="projets__content">
                             <Card
                             item = {data}
                             />
@@ -69,11 +71,11 @@ function Home () {
                     </div>
                 </section>
                 <section id = "contact">
-                    <div className = "page4__container">
+                    <div className = "contact__container">
                         <BoxIndexHeader
                             section = "contact"
                         />
-                        <div className ="page4__content">
+                        <div className ="contact__content">
                             <Form/>
                         </div>
                     </div>
