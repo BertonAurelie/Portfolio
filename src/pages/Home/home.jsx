@@ -83,8 +83,13 @@ function Home () {
                         <div className ="contact__content">
                             <Form/>
                         </div>
+                        <footer>
+                            <p>Copyright Ⓒ 2024. Tous droits réservés. Mentions légales</p>
+                        </footer>
                     </div>
+                    
                 </section>
+                
             </main>
         </>
     )
