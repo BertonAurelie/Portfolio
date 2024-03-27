@@ -10,7 +10,8 @@ function ModalCard(props) {
         setIsOpen(false);
     });
 
-    const handleClick = (() => {
+    const handleClick = ((event) => {
+        event.preventDefault();
         setIsOpen(true);
     });
     
@@ -50,7 +51,7 @@ function ModalCard(props) {
                                 {item.pictures.map((image, index) => (
                                     <img key={index} src = {image} className="modal__pictures--img"></img>
                                 ))}
-                            </div>                
+                            </div>                                   
                         </>
                     }
                 />

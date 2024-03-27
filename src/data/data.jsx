@@ -79,12 +79,13 @@ export const data = [
         "title" : "Association Chihiro",
         "cover": imgId4,
         "pictures":[
+            imgId4
         ],
         "description":"En cours de développement.",
         "tags": [
             "React",
             "sass",
         ],
-        "site" : ""
+        
     }
 ]
