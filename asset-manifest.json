@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0b654a1f.css",
-    "main.js": "/Portfolio/static/js/main.9d04944a.js",
+    "main.css": "/Portfolio/static/css/main.734d5642.css",
+    "main.js": "/Portfolio/static/js/main.a3a07252.js",
     "static/media/img.jpg": "/Portfolio/static/media/img.3c73c7da043b69846b1b.jpg",
     "static/media/justice.webp": "/Portfolio/static/media/justice.46b0428a5603b00d6aef.webp",
     "static/media/kasa_cover.webp": "/Portfolio/static/media/kasa_cover.cdfb703650ca71ae1eb6.webp",
@@ -22,11 +22,11 @@
     "static/media/sophie_bluel_3.webp": "/Portfolio/static/media/sophie_bluel_3.a554e445c10148080cc1.webp",
     "static/media/mon_vieux_grimoire_5.webp": "/Portfolio/static/media/mon_vieux_grimoire_5.7413d382d8d04ab57f43.webp",
     "index.html": "/Portfolio/index.html",
-    "main.0b654a1f.css.map": "/Portfolio/static/css/main.0b654a1f.css.map",
-    "main.9d04944a.js.map": "/Portfolio/static/js/main.9d04944a.js.map"
+    "main.734d5642.css.map": "/Portfolio/static/css/main.734d5642.css.map",
+    "main.a3a07252.js.map": "/Portfolio/static/js/main.a3a07252.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b654a1f.css",
-    "static/js/main.9d04944a.js"
+    "static/css/main.734d5642.css",
+    "static/js/main.a3a07252.js"
   ]
 }
