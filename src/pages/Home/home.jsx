@@ -9,26 +9,10 @@ import { BsArrowDown } from "react-icons/bs";
 import justice from '../../assets/justice.webp'
 import cloud from '../../assets/cloud2.webp'
 import {data} from '../../data/data'
-import { motion, useScroll,scrollRef,useSpring,useMotionValueEvent } from "framer-motion"
-import { useRef } from "react";
+
 function Home () {
 
-    const scrollRef = useRef(null)
-    const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 40,
-    restDelta: 0.001
-  });
 
-  const test = useSpring(scrollYProgress, {
-  })
-
-  const { scrollY } = useScroll()
-
-useMotionValueEvent(scrollY, "change", (latest) => {
-  console.log("Page scroll: ", latest)
-})
 
     return (  
         <>
@@ -41,14 +25,9 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                     >
                             <BoxIndexHeader/>
                         <div className = "accueil__content">
-                            <motion.div 
-                                className = "curvedText"
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                            
-                            >
+                            <div className = "curvedText">
                                 <CurvedText/>
-                            </motion.div>
+                            </div>
                             <div className = "arrow">
                                 <BsArrowDown />
                             </div>
@@ -56,10 +35,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                     </div>
                 </section>
                 <section id = "presentation"  >
-                    <motion.div  
-                        className = "presentation__container"
-                        style={{ scaleX: scrollYProgress }}
-                    >
+                    <div className = "presentation__container" >
                         <BoxIndexHeader
                             section = "présentation"
                         />
@@ -70,7 +46,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                             </div>
                             <div className ="presentation__text">
                                 <div className = "ma__presentation">
-                                <p>Issue d'une double licence droit-philosophie, j'ai travaillé durant 7 ans pour un cabinet d'avocat à la cour de Cassation et au conseil d'Etat.Lassée de ces procédures judiciaires immuables, j'ai suivi la formation développeur web d'OpenClassrooms pour une vie professionnelle plus riche intellectuellement et passionnante.</p>
+                                <p>Issue d'une double licence droit-philosophie, j'ai travaillé durant 7 ans pour un cabinet d'avocats à la cour de Cassation et au conseil d'Etat.Lassée de ces procédures judiciaires immuables, j'ai suivi la formation développeur web d'OpenClassrooms pour une vie professionnelle plus riche intellectuellement et passionnante.</p>
                                 </div>
                                 <div className ="mes__competences">
                                     <p> Mes compétences : </p>
@@ -85,7 +61,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </section>
                 <section id = "projets">
                     <div className = "projets__container">

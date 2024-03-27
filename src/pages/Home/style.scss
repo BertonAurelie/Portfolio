@@ -43,6 +43,10 @@ section {
         flex-grow:1;  
         gap:40px;
 
+        @media (max-height : 600px) {
+            gap:0;
+        }
+
         .accueil__content {
             width:100%;
             height:100%;
@@ -50,6 +54,10 @@ section {
             flex-direction: column;       
             gap:40px;
             justify-content: space-between;
+
+            @media (max-height : 600px) {
+                gap:0;
+            }
 
             .curvedText {
                 display:flex;
@@ -118,6 +126,8 @@ section {
                         padding-left: 50px;
                     }
 
+                   
+
                     @media (max-width: 775px) {
                         width:40%;
 
@@ -128,13 +138,20 @@ section {
                             align-self: flex-end;
                             
                         }
+
+                        #img2 {
+                            width:90%;
+                            padding-left: 20px;
+                        }
+
+                        @media (max-width: 425px) {
+                            display:none;
+
+                            
+                        }
                     }
 
-                    @media (max-width: 425px) {
-                        display:none;
-
-                        
-                    }
+                    
                 }
                 .presentation__text {
                     display:flex;
@@ -198,6 +215,7 @@ section {
                             width:100%;
                             gap:10px;
                             align-items: center;
+                            background-color: transparent;
                         }
                         
                         p {
@@ -210,6 +228,7 @@ section {
                             gap:30px;
                             list-style-type: none;
                             flex-wrap: wrap;
+                            justify-content: center;
 
                             li {
                                 background-color:#E6D8C4;
@@ -509,6 +528,10 @@ section {
         flex-direction: column;
         gap:30px;
         
+        @media (max-width: 400px) {
+            gap:0;
+
+        }
         .contact__content {
             width:50%;
             height:70%;
@@ -517,6 +540,25 @@ section {
             align-self: center;
             align-items: center;
             margin-top: 30px;
+
+            @media (max-width: 770px) {
+                display:flex;
+                width:90%;
+                height:90%;
+                margin-top: 0;
+                flex-wrap: wrap;
+
+            }
+
+            @media (max-width: 426px) {
+                display:flex;
+                width:98%;
+                height:90%;
+                margin-top: 0;
+                flex-wrap: wrap;
+                margin-bottom: 5px;
+
+            }
 
             form {
                 width:100%;
@@ -533,8 +575,9 @@ section {
                     font-weight: 500;
 
                     @media (max-width: 400px) {
-                        font-size: 20px;
+                        font-size: 18px;
                         margin-top: 10px;
+                        width:90%;
 
                     }
                 }
@@ -554,21 +597,17 @@ section {
                     legend {
                         font-size: 35px;
                         font-family: $fontFamilyOriginal;
-                    }
-
-                    label {
-                        display:flex;
-                        text-align: flex-end;
-                        align-items: center;
-                        flex-basis: 100px;
-                        justify-content: center;
-
-                    }
+                    }                    
 
                     input {
                         width:270px;
                         height:30px;
                         margin:5px;
+                        font-family: $fontFamilyBasic;
+                    }
+
+                    p {
+                        color:rgb(203, 16, 16);
                     }
                 }
 
@@ -576,6 +615,7 @@ section {
                     width:calc((200% - 80px)/2);
                     height:100%;
                     margin:15px;
+                    overflow-y: scroll;
                     
                     @media (max-width: 400px) {
                         width:90%;
@@ -617,12 +657,6 @@ section {
                     @media (max-width: 400px) {
                         width:300px;
                         height:200px;
-
-
-                        label {
-                            flex-basis: 70px;
-    
-                        }
                     }
                 }
 
